@@ -15,7 +15,9 @@ import java.util.Map;
 public class CountryCodeConverter {
 
     // TODO Task: pick appropriate instance variable(s) to store the data necessary for this class
-
+    private int id;
+    private String alpha3;
+    private String countryname;
     /**
      * Default constructor which will load the country codes from "country-codes.txt"
      * in the resources folder.
@@ -34,7 +36,8 @@ public class CountryCodeConverter {
         try {
             List<String> lines = Files.readAllLines(Paths.get(getClass()
                     .getClassLoader().getResource(filename).toURI()));
-
+            for (String line : lines) {
+                String[] parts = line.split(" ");
             // TODO Task: use lines to populate the instance variable(s)
 
         }
