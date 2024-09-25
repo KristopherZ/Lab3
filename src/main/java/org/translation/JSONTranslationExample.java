@@ -19,8 +19,8 @@ public class JSONTranslationExample {
     // Note: CheckStyle is configured so that we are allowed to omit javadoc for constructors
     public JSONTranslationExample() {
         try {
-            String jsonString = Files.readString(Paths.get(
-                    getClass().getClassLoader().getResource("sample.json").toURI()));
+            String jsonString = Files.readString(
+                    Paths.get(getClass().getClassLoader().getResource("sample.json").toURI()));
             this.jsonArray = new JSONArray(jsonString);
         }
         catch (IOException | URISyntaxException ex) {
