@@ -27,7 +27,6 @@ public class CountryCodeConverter {
 
     /**
      * Overloaded constructor which allows us to specify the filename to load the country code data from.
-     *
      * @param filename the name of the file in the resources folder to load the data from
      * @throws RuntimeException if the resource file can't be loaded properly
      */
@@ -46,6 +45,7 @@ public class CountryCodeConverter {
                 length++;
 
             }
+
         }
         catch (IOException | URISyntaxException ex) {
             throw new RuntimeException(ex);
@@ -55,7 +55,6 @@ public class CountryCodeConverter {
 
     /**
      * Returns the name of the country for the given country code.
-     *
      * @param code the 3-letter code of the country
      * @return the name of the country corresponding to the code
      */
@@ -65,7 +64,6 @@ public class CountryCodeConverter {
 
     /**
      * Returns the code of the country for the given country name.
-     *
      * @param country the name of the country
      * @return the 3-letter code of the country
      */
@@ -75,11 +73,9 @@ public class CountryCodeConverter {
 
     /**
      * Returns how many countries are included in this code converter.
-     *
      * @return how many countries are included in this code converter.
      */
     public int getNumCountries() {
         return length;
     }
-
 }
