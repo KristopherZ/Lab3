@@ -13,8 +13,8 @@ import java.util.Map;
  */
 public class LanguageCodeConverter {
 
-    private Map<String, String> codeToLanuage = new HashMap();
-    private Map<String, String> lanuageToCode = new HashMap();
+    private Map<String, String> codeToLanuage = new HashMap<>();
+    private Map<String, String> lanuageToCode = new HashMap<>();
     private int length;
 
     /**
